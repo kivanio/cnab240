@@ -67,7 +67,7 @@ RSpec.describe BoletoBancoob do
       arquivo_data_geracao: '23032014',
       arquivo_hora_geracao: '221716',
       controle_cobranca: '1',
-      data_geracao: '24102013'
+      lote_data_geracao: '24102013'
     }
 
     # Cria boleto já com 1 lote criado
