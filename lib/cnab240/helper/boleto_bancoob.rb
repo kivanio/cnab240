@@ -6,6 +6,7 @@ module Cnab240
       campos[:empresa_tipo] ||= '2'
       campos[:arquivo_data_geracao] ||= (Time.respond_to?(:current) ? Time.current : Time.now).strftime('%d%m%Y')
       campos[:arquivo_hora_geracao] ||= (Time.respond_to?(:current) ? Time.current : Time.now).strftime('%H%M%S')
+      campos[:lote_data_geracao] ||= (Time.respond_to?(:current) ? Time.current : Time.now).strftime('%d%m%Y')
       campos[:arquivo_codigo] ||= '1'
 
       @arquivo = Cnab240::Arquivo::Arquivo.new('V81')
